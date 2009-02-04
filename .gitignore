@@ -13,7 +13,7 @@ Thumbs.db
 */public/javascripts/all.js
 */coverage
 */sqlnet.log
-*/db/*.sqlite
+*.sqlite3
 */db/schema.rb
 */data/
 */public/upload/
@@ -21,3 +21,4 @@ Thumbs.db
 */vendor/**/.git/
 */images/uploaded_photos
 /shared
+schema.rb
