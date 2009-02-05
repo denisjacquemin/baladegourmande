@@ -1,5 +1,5 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :schedules
+  map.resources :schedules, :collection => {:sort => :post}
 
   # The priority is based upon order of creation: first created -> highest priority.
 

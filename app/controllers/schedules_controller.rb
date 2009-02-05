@@ -2,7 +2,7 @@ class SchedulesController < ApplicationController
   # GET /schedules
   # GET /schedules.xml
   def index
-    @schedules = Schedule.find(:all)
+    @schedules = Schedule.all(:order => 'position')
 
     respond_to do |format|
       format.html # index.html.erb
@@ -81,5 +81,12 @@ class SchedulesController < ApplicationController
       format.html { redirect_to(schedules_url) }
       format.xml  { head :ok }
     end
+  end
+  
+  def sort
+    params[:schedules].each_with_index do |id, index|
+      Schedule.update_all(['position=?', index+1], ['id=?', id])
+    end
+    render :nothing => true
   end
 end
