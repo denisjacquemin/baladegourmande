@@ -1,0 +1,34 @@
+!!!
+%html{ html_attrs() }
+  %head
+    %meta{'http-equiv' => "Content-Type", :content => "text/html; charset=UTF-8"}
+    %title
+      Balade gourmande administration
+    = javascript_include_tag :defaults
+    = stylesheet_link_tag 'base', 'themes/bec-green/style.css', 'application'
+  %body
+    #container
+      #header
+        %h1
+          = link_to 'Balade de Saint-Monon Administration', '#'
+        #user-navigation
+          %ul
+            %li
+              = link_to 'baladestmonon.be', 'http://www.baladestmonon.be'
+            %li
+              = link_to 'biermonfoy.be', 'http://www.biermonfoy.be'
+          .clear
+        #main-navigation
+          %ul
+            %li
+              = link_to 'Horaires', '#'
+          .clear
+      #wrapper
+        #main
+          = yield
+        #sidebar
+          .block.notice
+            %h4
+              Tri des horaires
+            %p
+              Pour trier les horaires il suffit de drag and droper dans l'ordre voulu.

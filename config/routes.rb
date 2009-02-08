@@ -1,4 +1,7 @@
 ActionController::Routing::Routes.draw do |map|
+  map.connect 'schedule/cancel_add', :controller => 'schedules', :action => 'cancel_add'
+  map.connect 'schedule/add', :controller => 'schedules', :action => 'add'
+  map.connect 'schedule/descativate/:id', :controller => 'schedules', :action => 'desactivate'
   map.resources :schedules, :collection => {:sort => :post}
 
   # The priority is based upon order of creation: first created -> highest priority.

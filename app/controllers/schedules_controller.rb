@@ -2,7 +2,7 @@ class SchedulesController < ApplicationController
   # GET /schedules
   # GET /schedules.xml
   def index
-    @schedules = Schedule.all(:order => 'position')
+    @schedules = Schedule.all(:conditions => "active='t'", :order => 'position')
 
     respond_to do |format|
       format.html # index.html.erb
@@ -21,8 +21,6 @@ class SchedulesController < ApplicationController
     end
   end
 
-  # GET /schedules/new
-  # GET /schedules/new.xml
   def new
     @schedule = Schedule.new
 
@@ -37,20 +35,15 @@ class SchedulesController < ApplicationController
     @schedule = Schedule.find(params[:id])
   end
 
-  # POST /schedules
-  # POST /schedules.xml
   def create
     @schedule = Schedule.new(params[:schedule])
-
-    respond_to do |format|
-      if @schedule.save
-        flash[:notice] = 'Schedule was successfully created.'
-        format.html { redirect_to(@schedule) }
-        format.xml  { render :xml => @schedule, :status => :created, :location => @schedule }
-      else
-        format.html { render :action => "new" }
-        format.xml  { render :xml => @schedule.errors, :status => :unprocessable_entity }
-      end
+    @schedule.save
+    Rails.logger.info(@schedule.to_yaml)
+    
+    render :update do |page|
+      page['new_schedule'].remove
+      @schedules = Schedule.all(:conditions => "active='t'", :order => 'position')
+      page['schedules'].replace( render(:partial => 'schedules', :local => {:schedule => @schedules}) )
     end
   end
 
@@ -89,4 +82,20 @@ class SchedulesController < ApplicationController
     end
     render :nothing => true
   end
+  
+  def desactivate
+    schedule = Schedule.find(params[:id])
+    schedule.update_attribute( 'active', false)
+    render :update do |page|
+      page["schedule_#{params[:id]}"].remove()
+    end
+  end
+  
+  def add
+    @schedule = Schedule.new
+    render :update do |page|
+      page['schedules'].insert(render (:partial => 'new_schedule') )
+    end
+  end
+
 end

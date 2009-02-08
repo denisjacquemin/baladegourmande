@@ -1,0 +1,3 @@
+%ul.list{:id => 'schedules'}
+  = render :partial => 'schedule', :collection => @schedules
+= sortable_element('schedules', :url => sort_schedules_path, :handle => 'handle')

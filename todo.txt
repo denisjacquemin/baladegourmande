@@ -1,0 +1,4 @@
+ajouter plugin acts_as_list
+downloader la doc rails 2.2.2
+ajouter le scaffold register
+configurer un .htaccess pour proteger l'administration

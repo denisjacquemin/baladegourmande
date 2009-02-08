@@ -1,0 +1,6 @@
+- content_tag_for :li, schedule do
+  %span.handle
+    [drag]
+  %span.delete
+    = link_to_remote '[supprimer]', :url => "/schedule/descativate/#{schedule.id}"
+  =h schedule.label
