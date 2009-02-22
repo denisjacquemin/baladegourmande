@@ -83,6 +83,8 @@ class SchedulesController < ApplicationController
     render :nothing => true
   end
   
+  # set active attribute to false, logical delete, wich allow to keep information when 
+  # a schedule is linked to a reservation.
   def desactivate
     schedule = Schedule.find(params[:id])
     schedule.update_attribute( 'active', false)
@@ -95,6 +97,7 @@ class SchedulesController < ApplicationController
     @schedule = Schedule.new
     render :update do |page|
       page['schedules'].insert(render (:partial => 'new_schedule') )
+      page['schedule_label'].focus()
     end
   end
 

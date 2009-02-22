@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :reservations
+
   map.connect 'schedule/cancel_add', :controller => 'schedules', :action => 'cancel_add'
   map.connect 'schedule/add', :controller => 'schedules', :action => 'add'
   map.connect 'schedule/descativate/:id', :controller => 'schedules', :action => 'desactivate'

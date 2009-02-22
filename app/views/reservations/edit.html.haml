@@ -1,0 +1,6 @@
+- form_for(@reservation) do |f|
+  = f.error_messages
+
+  = render :partial => 'form', :locals => {:f => f}
+
+  = link_to "Je m'inscris", @reservation

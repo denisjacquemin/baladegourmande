@@ -1,0 +1,39 @@
+%p
+  = f.label :firstname, 'Prenom *'
+  = f.text_field :firstname
+%p
+  = f.label :lastname, 'Nom *'
+  = f.text_field :lastname
+%p
+  = f.label :email, 'Email'
+  = f.text_field :email
+%p
+  = f.label :street, 'Rue *'
+  = f.text_field :street
+%p
+  = f.label :number, 'Numero *'
+  = f.text_field :number
+%p
+  = f.label :postal_code, 'Code postal *'
+  = f.text_field :postal_code
+%p
+  = f.label :location, 'Localite *'
+  = f.text_field :location
+%p
+  = f.label :group_name, 'Nom du groupe'
+  = f.text_field :group_name
+%p
+  = f.label :nb_adult, "Nombre d'adulte"
+  = f.text_field :nb_adult
+%p
+  = f.label :nb_child, "Nombre d'enfant"
+  = f.text_field :nb_child
+%p
+  = f.label :schedule_id, 'Horaire souhaite *'
+  %ul
+    - fields_for @reservation.schedule do |s|
+      = render :partial => 'schedule', :collection => @schedules, :locals => {:s => s}
+%p
+  = f.label :comment, 'Commentaires'
+  = f.text_area :comment
+%p

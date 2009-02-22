@@ -1,0 +1,45 @@
+%p
+  Voici un recapitulatif des donnes entree, veuillez valider votre inscriptions en appuyant sur 'confirmer' ou corriger les erreurs en appuyant sur 'modifier'.
+
+%p
+  Firstname:
+  =h @reservation.firstname
+
+%p
+  Lastname:
+  =h @reservation.lastname
+
+%p
+  Email:
+  =h @reservation.email
+
+%p
+  Street:
+  =h @reservation.street
+
+%p
+  Number:
+  =h @reservation.number
+
+%p
+  Postal code:
+  =h @reservation.postal_code
+
+%p
+  Location:
+  =h @reservation.location
+
+%p
+  Schedule:
+  =h @reservation.schedule_id
+
+%p
+  Comment:
+  =h @reservation.comment
+
+%p
+  Group name:
+  =h @reservation.group_name
+
+= link_to 'Modifier', edit_reservation_path(@reservation) |
+= link_to 'Confirmer', reservations_path
