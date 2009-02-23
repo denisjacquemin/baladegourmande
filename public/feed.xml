@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
  <id>urn:iweb:D945C03E-8C67-41B8-9608-99D1AF092E17</id>
  <title>Page list Atom feed</title>
- <updated>2009-02-09T08:21:59+01:00</updated>
+ <updated>2009-02-23T20:13:48+01:00</updated>
  <link rel="self" href="feed.xml"/>
  <generator>iWeb</generator>
  <author>
@@ -10,12 +10,21 @@
  </author>
  <entry>
   <id>urn:iweb:14739B8C-F666-4A6F-A1DE-9C3C847BA012</id>
-  <title>En bref...</title>
-  <title xmlns="urn:iweb:">En bref...</title>
+  <title>En bref</title>
+  <title xmlns="urn:iweb:">En bref</title>
   <in-navbar xmlns="urn:iweb:">14739B8C-F666-4A6F-A1DE-9C3C847BA012</in-navbar>
-  <link rel="alternate" href="En_bref....html"/>
-  <updated>2009-02-09T08:21:59.001+01:00</updated>
-  <content>En bref...</content>
+  <link rel="alternate" href="En_bref.html"/>
+  <updated>2009-02-23T20:13:48.001+01:00</updated>
+  <content>En bref</content>
+ </entry>
+ <entry>
+  <id>urn:iweb:DAE03E43-C507-4923-8670-A1355656E9D9</id>
+  <title>En details</title>
+  <title xmlns="urn:iweb:">En details</title>
+  <in-navbar xmlns="urn:iweb:">DAE03E43-C507-4923-8670-A1355656E9D9</in-navbar>
+  <link rel="alternate" href="En_details.html"/>
+  <updated>2009-02-23T20:13:48.002+01:00</updated>
+  <content>En details</content>
  </entry>
  <entry>
   <id>urn:iweb:EB355F25-FDEF-4B24-B667-32E2FB3CD274</id>
@@ -23,7 +32,7 @@
   <title xmlns="urn:iweb:">Menu</title>
   <in-navbar xmlns="urn:iweb:">EB355F25-FDEF-4B24-B667-32E2FB3CD274</in-navbar>
   <link rel="alternate" href="Menu.html"/>
-  <updated>2009-02-09T08:21:59.002+01:00</updated>
+  <updated>2009-02-23T20:13:48.003+01:00</updated>
   <content>Menu</content>
  </entry>
  <entry>
@@ -32,7 +41,7 @@
   <title xmlns="urn:iweb:">Inscriptions</title>
   <in-navbar xmlns="urn:iweb:">0DB0F700-515D-44F3-9767-DC093C3C5D13</in-navbar>
   <link rel="alternate" href="Inscriptions.html"/>
-  <updated>2009-02-09T08:21:59.003+01:00</updated>
+  <updated>2009-02-23T20:13:48.004+01:00</updated>
   <content>Inscriptions</content>
  </entry>
  <entry>
@@ -41,7 +50,7 @@
   <title xmlns="urn:iweb:">Acces</title>
   <in-navbar xmlns="urn:iweb:">D07D2AF5-F1EC-44E3-8E89-7DFB443A0856</in-navbar>
   <link rel="alternate" href="Acces.html"/>
-  <updated>2009-02-09T08:21:59.004+01:00</updated>
+  <updated>2009-02-23T20:13:48.005+01:00</updated>
   <content>Acces</content>
  </entry>
 </feed>

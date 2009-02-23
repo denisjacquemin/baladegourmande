@@ -1,9 +1,8 @@
-#block-lists.block
-  .content
-    %h2.title
-      Gestion des Horaires
-    .inner
-      .group  
-        = render :partial => 'schedules'
-      .group.navform     
-        = link_to_remote 'Ajouter', :url => 'schedule/add'
+.content
+  %h2.title
+    Gestion des Horaires
+  .inner
+    .group  
+      = render :partial => 'schedules'
+    .group.navform     
+      = link_to_remote 'Ajouter', :url => 'schedule/add'

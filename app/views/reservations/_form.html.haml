@@ -1,39 +1,59 @@
 %p
-  = f.label :firstname, 'Prenom *'
-  = f.text_field :firstname
-%p
-  = f.label :lastname, 'Nom *'
-  = f.text_field :lastname
+  %table
+    %tr
+      %td
+        = f.label :firstname, 'Prenom *'
+        %br
+        = f.text_field :firstname
+      %td
+        = f.label :lastname, 'Nom *'
+        %br
+        = f.text_field :lastname
 %p
   = f.label :email, 'Email'
+  %br
   = f.text_field :email
 %p
-  = f.label :street, 'Rue *'
-  = f.text_field :street
+  %table
+    %tr
+      %td
+        = f.label :street, 'Rue *'
+        %br
+        = f.text_field :street
+      %td  
+        = f.label :number, 'Numero *'
+        %br
+        = f.text_field :number
 %p
-  = f.label :number, 'Numero *'
-  = f.text_field :number
-%p
-  = f.label :postal_code, 'Code postal *'
-  = f.text_field :postal_code
-%p
-  = f.label :location, 'Localite *'
-  = f.text_field :location
+  %table
+    %tr
+      %td
+        = f.label :postal_code, 'Code postal *'
+        %br
+        = f.text_field :postal_code
+      %td  
+        = f.label :location, 'Localite *'
+        %br
+        = f.text_field :location
 %p
   = f.label :group_name, 'Nom du groupe'
+  %br
   = f.text_field :group_name
 %p
   = f.label :nb_adult, "Nombre d'adulte"
+  %br
   = f.text_field :nb_adult
 %p
   = f.label :nb_child, "Nombre d'enfant"
+  %br
   = f.text_field :nb_child
 %p
   = f.label :schedule_id, 'Horaire souhaite *'
   %ul
-    - fields_for @reservation.schedule do |s|
-      = render :partial => 'schedule', :collection => @schedules, :locals => {:s => s}
+    = render :partial => 'schedule', :collection => @schedules, :locals => {:f => f}
 %p
   = f.label :comment, 'Commentaires'
+  %br
   = f.text_area :comment
-%p
+%script
+  $("new_reservation").focusFirstElement();

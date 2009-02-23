@@ -8,7 +8,7 @@ class ReservationsController < ApplicationController
     @reservations = Reservation.find(:all)
 
     respond_to do |format|
-      format.html # index.html.erb
+      format.html { render :layout => 'admin' }
       format.xml  { render :xml => @reservations }
     end
   end

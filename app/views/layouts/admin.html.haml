@@ -21,14 +21,12 @@
         #main-navigation
           %ul
             %li
-              = link_to 'Horaires', '#'
+              = link_to 'Horaires', '/schedules'
+            %li
+              = link_to 'Reservations', '/reservations'
           .clear
       #wrapper
         #main
-          = yield
-        #sidebar
-          .block.notice
-            %h4
-              Gestion des horaires
-            %p
-              Cet ecran permet de creer, supprimer et ordoner les horaires de la balade.
+          #block.block
+            = yield
+

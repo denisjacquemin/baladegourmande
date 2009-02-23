@@ -4,6 +4,7 @@ class Schedule < ActiveRecord::Base
   validates_uniqueness_of   :position
   
   acts_as_list
-  
+
   has_many :reservations
+  
 end

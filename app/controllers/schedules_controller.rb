@@ -5,7 +5,7 @@ class SchedulesController < ApplicationController
     @schedules = Schedule.all(:conditions => "active='t'", :order => 'position')
 
     respond_to do |format|
-      format.html # index.html.erb
+      format.html { render :layout => 'admin' } # index.html.erb
       format.xml  { render :xml => @schedules }
     end
   end

@@ -1,0 +1,19 @@
+.content
+  %h2.title
+    Reservations
+  .inner          
+    %table.table
+      %tr
+        %th
+          Nom - Prenom
+        %th
+          Nom du groupe
+        %th
+          Date d'inscription
+        %th
+          Adultes
+        %th
+          Enfants
+        %th.last
+          Horaire
+      = render :partial => 'reservation', :collection => @reservations
