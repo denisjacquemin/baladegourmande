@@ -1,4 +1,8 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :bgs
+
+  
+  map.connect 'reservation/confirm/:id', :controller => 'reservations', :action => 'confirm'
   map.resources :reservations
 
   map.connect 'schedule/cancel_add', :controller => 'schedules', :action => 'cancel_add'

@@ -11,3 +11,5 @@
     = reservation.nb_child
   %td
     = reservation.schedule.label
+  %td
+    = truncate(reservation.comment, :length => 15)

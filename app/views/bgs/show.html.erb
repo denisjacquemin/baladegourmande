@@ -1,0 +1,18 @@
+<p>
+  <b>Reservations open:</b>
+  <%=h @bg.reservations_open %>
+</p>
+
+<p>
+  <b>Reservations not open text:</b>
+  <%=h @bg.reservations_not_open_text %>
+</p>
+
+<p>
+  <b>Reservations closed text:</b>
+  <%=h @bg.reservations_closed_text %>
+</p>
+
+
+<%= link_to 'Edit', edit_bg_path(@bg) %> |
+<%= link_to 'Back', bgs_path %>

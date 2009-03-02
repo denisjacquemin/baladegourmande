@@ -1,8 +1,10 @@
 %p
+  * champs requis
+%p
   %table
     %tr
       %td
-        = f.label :firstname, 'Prenom *'
+        = f.label :firstname, 'Prénom *'
         %br
         = f.text_field :firstname
       %td
@@ -21,18 +23,18 @@
         %br
         = f.text_field :street
       %td  
-        = f.label :number, 'Numero *'
+        = f.label :number, 'Numéro *'
         %br
-        = f.text_field :number
+        = f.text_field :number, :class => 'small_field'
 %p
   %table
     %tr
       %td
         = f.label :postal_code, 'Code postal *'
         %br
-        = f.text_field :postal_code
+        = f.text_field :postal_code, :class => 'small_field'
       %td  
-        = f.label :location, 'Localite *'
+        = f.label :location, 'Localité *'
         %br
         = f.text_field :location
 %p
@@ -40,15 +42,17 @@
   %br
   = f.text_field :group_name
 %p
-  = f.label :nb_adult, "Nombre d'adulte"
+  = f.label :nb_adult, "Nombre d'adulte *"
   %br
-  = f.text_field :nb_adult
+  = f.text_field :nb_adult, :class => 'small_field'
+  * 38euros
 %p
-  = f.label :nb_child, "Nombre d'enfant"
+  = f.label :nb_child, "Nombre d'enfant *"
   %br
-  = f.text_field :nb_child
+  = f.text_field :nb_child, :class => 'small_field'
+  * 12euros
 %p
-  = f.label :schedule_id, 'Horaire souhaite *'
+  = f.label :schedule_id, 'Horaire souhaité *'
   %ul
     = render :partial => 'schedule', :collection => @schedules, :locals => {:f => f}
 %p

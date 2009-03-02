@@ -1,0 +1,24 @@
+<h1>Listing bgs</h1>
+
+<table>
+  <tr>
+    <th>Reservations open</th>
+    <th>Reservations not open text</th>
+    <th>Reservations closed text</th>
+  </tr>
+
+<% for bg in @bgs %>
+  <tr>
+    <td><%=h bg.reservations_open %></td>
+    <td><%=h bg.reservations_not_open_text %></td>
+    <td><%=h bg.reservations_closed_text %></td>
+    <td><%= link_to 'Show', bg %></td>
+    <td><%= link_to 'Edit', edit_bg_path(bg) %></td>
+    <td><%= link_to 'Destroy', bg, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New bg', new_bg_path %>

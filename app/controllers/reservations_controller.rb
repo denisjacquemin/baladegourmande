@@ -5,7 +5,7 @@ class ReservationsController < ApplicationController
   # GET /reservations
   # GET /reservations.xml
   def index
-    @reservations = Reservation.find(:all)
+    @reservations = Reservation.find(:all, :conditions => "confirm = 't'", :order => 'created_at desc')
 
     respond_to do |format|
       format.html { render :layout => 'admin' }
@@ -16,6 +16,7 @@ class ReservationsController < ApplicationController
   # GET /reservations/1
   # GET /reservations/1.xml
   def show
+    @bg = Bg.first
     @reservation = Reservation.find(params[:id])
 
     respond_to do |format|
@@ -27,6 +28,7 @@ class ReservationsController < ApplicationController
   # GET /reservations/new
   # GET /reservations/new.xml
   def new
+    @bg = Bg.first
     @reservation = Reservation.new
 
     respond_to do |format|
@@ -47,7 +49,7 @@ class ReservationsController < ApplicationController
 
     respond_to do |format|
       if @reservation.save
-        flash[:notice] = 'Reservation was successfully created.'
+        #flash[:notice] = 'Réservation valide.'
         format.html { redirect_to(@reservation) }
         format.xml  { render :xml => @reservation, :status => :created, :location => @reservation }
       else
@@ -64,7 +66,7 @@ class ReservationsController < ApplicationController
 
     respond_to do |format|
       if @reservation.update_attributes(params[:reservation])
-        flash[:notice] = 'Reservation was successfully updated.'
+        #flash[:notice] = 'Réservation valide.'
         format.html { redirect_to(@reservation) }
         format.xml  { head :ok }
       else
@@ -88,5 +90,13 @@ class ReservationsController < ApplicationController
   
   def load_schedules
     @schedules = Schedule.all(:conditions => "active = 't'", :order => 'position')
+  end
+  
+  def confirm
+    @bg = Bg.first
+    reservation = Reservation.find(params[:id])
+    reservation.confirm = true
+    reservation.save
+    
   end
 end

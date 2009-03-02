@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  reservations_open: false
+  reservations_not_open_text: MyText
+  reservations_closed_text: MyText
+
+two:
+  reservations_open: false
+  reservations_not_open_text: MyText
+  reservations_closed_text: MyText

@@ -1,12 +1,12 @@
 %p
-  Voici un recapitulatif des donnes entree, veuillez valider votre inscriptions en appuyant sur 'confirmer' ou corriger les erreurs en appuyant sur 'modifier'.
+  =@bg.step2
 
 %p
-  Firstname:
+  Prénom:
   =h @reservation.firstname
 
 %p
-  Lastname:
+  Nom:
   =h @reservation.lastname
 
 %p
@@ -14,32 +14,46 @@
   =h @reservation.email
 
 %p
-  Street:
+  Rue:
   =h @reservation.street
 
 %p
-  Number:
+  Numéro:
   =h @reservation.number
 
 %p
-  Postal code:
+  Code postal:
   =h @reservation.postal_code
 
 %p
-  Location:
+  Localité:
   =h @reservation.location
 
 %p
-  Schedule:
+  Nom du groupe:
+  =h @reservation.group_name
+
+%p
+  Nombre d'adulte:
+  =h @reservation.nb_adult
+
+%p
+  Nombre d'enfant:
+  =h @reservation.nb_child
+
+%p
+  A payer:
+  =((@reservation.nb_adult.to_i * 38) + (@reservation.nb_child * 12)).to_s + ' euros'
+
+%p
+  Horaire souhaité:
   =h @reservation.schedule.label
 
 %p
-  Comment:
+  Commentaires:
   =h @reservation.comment
 
-%p
-  Group name:
-  =h @reservation.group_name
+
 
 = link_to 'Modifier', edit_reservation_path(@reservation) |
-= link_to 'Confirmer', reservations_path
+= link_to 'Confirmer', "/reservation/confirm/#{@reservation.id}"

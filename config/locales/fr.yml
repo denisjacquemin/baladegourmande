@@ -11,6 +11,9 @@ fr-BE:
                 location: la ville
                 comment: le commentaire
                 group_name: le nom de groupe
+                schedule_id: l'horaire souhaité
+                nb_adult: le nombre d'adulte
+                nb_child: le nombre d'enfant
         models:
             schedule: horaire
         errors:

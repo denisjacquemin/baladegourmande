@@ -1,4 +1,7 @@
-- form_for(@reservation) do |f|
-  = f.error_messages
-  = render :partial => 'form', :locals => {:f => f}
-  = f.submit "Je m'inscris"
+- if @bg.reservations_open
+  - form_for(@reservation) do |f|
+    = f.error_messages
+    = render :partial => 'form', :locals => {:f => f}
+    = f.submit "Je m'inscris"
+- else
+  =@bg.reservations_not_open_text
