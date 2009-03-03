@@ -17,6 +17,6 @@ test:
 
 production:
     adapter: mysql
-    database: denisjac_bgprodution
+    database: denisjac_bgproduction
     username: denisjac_bg
     password: nzVtY78hZ5
