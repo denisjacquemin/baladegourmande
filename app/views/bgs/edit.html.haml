@@ -6,17 +6,22 @@
       %p
         =f.label :reservations_open, 'Reservations ouvertes?'
         =f.check_box :reservations_open
-      %p
-        =f.label :reservations_not_open_text, 'Texte pas ouvert'
-        %br
-        =f.text_area :reservations_not_open_text
-      %p
-        =f.label :step2, 'Etape 2, confirmer son inscription'
-        %br
-        =f.text_area :step2
-      %p
-        =f.label :step3, 'Etape 3, inscription terminee'
-        %br
-        =f.text_area :step3
+      %table
+        %tr
+          %td
+            =f.label :reservations_not_open_text, 'Texte pas ouvert'
+          %td
+            =f.label :step2, 'Etape 2, confirmer son inscription'
+        %tr
+          %td
+            =f.text_area :reservations_not_open_text
+          %td
+            =f.text_area :step2
+        %tr
+          %td
+            =f.label :step3, 'Etape 3, inscription terminee'
+        %tr
+          %td
+            =f.text_area :step3
       %p
         =f.submit "Enregistrer"
