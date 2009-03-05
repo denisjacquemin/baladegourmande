@@ -42,7 +42,7 @@ class SchedulesController < ApplicationController
     
     render :update do |page|
       page['new_schedule'].remove
-      @schedules = Schedule.all(:conditions => "active='t'", :order => 'position')
+      @schedules = Schedule.all(:conditions => "active=1", :order => 'position')
       page['schedules'].replace( render(:partial => 'schedules', :local => {:schedule => @schedules}) )
     end
   end

@@ -5,7 +5,7 @@ class ReservationsController < ApplicationController
   # GET /reservations
   # GET /reservations.xml
   def index
-    @reservations = Reservation.find(:all, :conditions => "confirm = 't'", :order => 'created_at desc')
+    @reservations = Reservation.find(:all, :conditions => "confirm = 1", :order => 'created_at desc')
 
     respond_to do |format|
       format.html { render :layout => 'admin' }
@@ -91,7 +91,7 @@ class ReservationsController < ApplicationController
   end
   
   def load_schedules
-    @schedules = Schedule.all(:conditions => "active = 't'", :order => 'position')
+    @schedules = Schedule.all(:conditions => "active = 1", :order => 'position')
   end
   
   def confirm
