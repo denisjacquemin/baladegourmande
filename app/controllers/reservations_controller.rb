@@ -10,6 +10,7 @@ class ReservationsController < ApplicationController
     respond_to do |format|
       format.html { render :layout => 'admin' }
       format.xml  { render :xml => @reservations }
+      format.xls
     end
   end
 
@@ -45,6 +46,7 @@ class ReservationsController < ApplicationController
   # POST /reservations
   # POST /reservations.xml
   def create
+    @bg = Bg.first
     @reservation = Reservation.new(params[:reservation])
 
     respond_to do |format|

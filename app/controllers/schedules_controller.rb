@@ -2,7 +2,7 @@ class SchedulesController < ApplicationController
   # GET /schedules
   # GET /schedules.xml
   def index
-    @schedules = Schedule.all(:conditions => "active='t'", :order => 'position')
+    @schedules = Schedule.all(:conditions => "active=1", :order => 'position')
 
     respond_to do |format|
       format.html { render :layout => 'admin' } # index.html.erb
