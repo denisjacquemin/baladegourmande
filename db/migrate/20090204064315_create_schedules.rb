@@ -3,7 +3,7 @@ class CreateSchedules < ActiveRecord::Migration
     create_table :schedules do |t|
       t.string :label, :limit => 100, :default => '', :null => true
       t.integer :position
-      t.boolean :active, :default => true, :null => true
+      t.boolean :active, :default => true, :null => false
 
       t.timestamps
     end

@@ -2,7 +2,7 @@ class SchedulesController < ApplicationController
   # GET /schedules
   # GET /schedules.xml
   def index
-    @schedules = Schedule.all(:conditions => "active=1", :order => 'position')
+    @schedules = Schedule.active
 
     respond_to do |format|
       format.html { render :layout => 'admin' } # index.html.erb
@@ -42,7 +42,7 @@ class SchedulesController < ApplicationController
     
     render :update do |page|
       page['new_schedule'].remove
-      @schedules = Schedule.all(:conditions => "active=1", :order => 'position')
+      @schedules = Schedule.active
       page['schedules'].replace( render(:partial => 'schedules', :local => {:schedule => @schedules}) )
     end
   end

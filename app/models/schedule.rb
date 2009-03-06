@@ -7,4 +7,6 @@ class Schedule < ActiveRecord::Base
 
   has_many :reservations
   
+  named_scope :active, :conditions => { :active => true }, :order => 'position asc'
+  
 end

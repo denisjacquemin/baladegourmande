@@ -1,7 +1,7 @@
 class CreateBgs < ActiveRecord::Migration
   def self.up
     create_table :bgs do |t|
-      t.boolean :reservations_open
+      t.boolean :reservations_open, :null => false
       t.text :reservations_not_open_text
       t.text :reservations_closed_text
       t.text :step2
