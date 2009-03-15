@@ -11,10 +11,16 @@
         = f.label :lastname, 'Nom *'
         %br
         = f.text_field :lastname
-%p
-  = f.label :email, 'Email'
-  %br
-  = f.text_field :email
+  %table
+    %tr
+      %td
+        = f.label :email, 'Email'
+        %br
+        = f.text_field :email
+      %td
+        = f.label :telephone, 'Téléphone *'
+        %br
+        = f.text_field :telephone
 %p
   %table
     %tr
@@ -45,12 +51,12 @@
   = f.label :nb_adult, "Nombre d'adulte *"
   %br
   = f.text_field :nb_adult, :class => 'small_field'
-  * 38euros
+  * 38EUR
 %p
   = f.label :nb_child, "Nombre d'enfant *"
   %br
   = f.text_field :nb_child, :class => 'small_field'
-  * 12euros
+  * 12EUR
 %p
   = f.label :schedule_id, 'Horaire souhaité *'
   %ul

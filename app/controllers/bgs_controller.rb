@@ -60,12 +60,9 @@ class BgsController < ApplicationController
   def update
     @bg = Bg.find(params[:id])
 
-    if @bg.update_attributes(params[:bg])
-      flash[:notice] = 'Bg was successfully updated.'
-      redirect_to "/bgs/1/edit"
-    else
-      redirect_to "/bgs/1/edit"
-    end
+    @bg.update_attributes(params[:bg])
+    flash[:notice] = 'Bg was successfully updated.'
+    redirect_to "/bgs/1/edit"
   end
 
   # DELETE /bgs/1

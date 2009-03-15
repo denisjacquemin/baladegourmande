@@ -8,12 +8,13 @@ fr-BE:
                 street: la rue
                 number: le numéro
                 postal_code: le code postal
-                location: la ville
+                location: la localité
                 comment: le commentaire
                 group_name: le nom de groupe
                 schedule_id: l'horaire souhaité
                 nb_adult: le nombre d'adulte
                 nb_child: le nombre d'enfant
+                telephone: le téléphone
         models:
             schedule: horaire
         errors:
@@ -27,7 +28,7 @@ fr-BE:
                 confirmation: ne correspond pas à la confirmation
                 accepted: doit être accepté
                 empty: ne peut pas être vide
-                blank: est requis
+                blank: est requis(e)
                 too_long: est trop long (%d caractères maximum)
                 too_short: est trop court(%d caractères minimum)
                 wrong_length: n'est pas de la bonne longueur (devrait être de %d caractères)

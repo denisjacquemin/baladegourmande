@@ -1,3 +1,1 @@
-trouver un tuto, comment utiliser 2 models dans le meme form avec rails 2.2.2
-ajouter le scaffold register
 configurer un .htaccess pour proteger l'administration

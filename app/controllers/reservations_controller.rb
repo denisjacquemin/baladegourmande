@@ -5,12 +5,13 @@ class ReservationsController < ApplicationController
   # GET /reservations
   # GET /reservations.xml
   def index
-    @reservations = Reservation.confirmed
+    @reservations = Reservation.confirmed.all
 
     respond_to do |format|
       format.html { render :layout => 'admin' }
       format.xml  { render :xml => @reservations }
-      format.xls
+      format.xls { send_data @reservations.to_xls }
+      format.csv { send_data @reservations.to_csv }
     end
   end
 

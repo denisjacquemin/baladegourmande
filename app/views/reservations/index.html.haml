@@ -2,6 +2,9 @@
   %h2.title
     Reservations
   .inner          
+    %p
+      =link_to "Exporter en xls", formatted_reservations_path(:format => :xls)
+      =link_to "Exporter en csv", formatted_reservations_path(:format => :csv)
     %table.table
       %tr
         %th
