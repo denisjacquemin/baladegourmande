@@ -22,3 +22,5 @@ config.action_controller.perform_caching             = true
 
 # Disable delivery errors, bad email addresses will be ignored
 # config.action_mailer.raise_delivery_errors = false
+
+ENV['GEM_PATH'] = '/home/denisjac/gems/usr/lib/ruby/gems/1.8'
