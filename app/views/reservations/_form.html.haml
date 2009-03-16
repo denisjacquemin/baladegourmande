@@ -64,6 +64,6 @@
 %p
   = f.label :comment, 'Commentaires'
   %br
-  = f.text_area :comment
+  = f.text_area :comment, :rows => 10, :cols => 60
 %script
   $("new_reservation").focusFirstElement();
