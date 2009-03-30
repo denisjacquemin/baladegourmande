@@ -665,7 +665,7 @@ var thumbnailSize=imageStreamEntry.thumbnailNaturalSize();var scale=layout.p_sca
 var frameMarkup=stroke.markupForImageStreamEntry(imageStreamEntry,scaledImageSize);wrapper.insert(frameMarkup);wrapper.insert(textMarkup);if(textMarkup.length>0)
 {var textWrapper=wrapper.lastChild;textWrapper.style.zIndex=1;}
 IWUpdateVerticalAlignment(wrapper);var framed=$(wrapper).selectFirst('.framedImage');var framePos=layout.translationForImageOfSizeAtIndexWithOffset(new IWSize(parseFloat(framed.style.width||0),parseFloat(framed.style.height||0)),i,null);framed.setStyle({left:px(framePos.x),top:px(framePos.y),zIndex:1});if(detailViewID)
-{var anchor=$(document.createElement("a"));anchor.setStyle({position:"absolute",left:framed.style.left,top:framed.style.top,width:framed.style.width,height:framed.style.height,zIndex:1});anchor.href='#'+streamIndex;anchor.onclick=IWToggleDetailView.bind(null,true,streamIndex,divID,headerViewID,footerViewID,detailViewID,shadow);if(windowsInternetExplorer&&(browserVersion>=7))
+{var anchor=$(document.createElement("a"));anchor.setStyle({position:"absolute",left:framed.style.left,top:framed.style.top,width:framed.style.width,height:framed.style.height,zIndex:1});anchor.href='#'+streamIndex;anchor.onclick=IWToggleDetailView.bind(null,true,streamIndex,divID,headerViewID,footerViewID,detailViewID,shadow);if(windowsInternetExplorer&&(effectiveBrowserVersion>=7))
 {var img=document.createElement('img');img.src=transparentGifURL();img.style.width=framed.style.width;img.style.height=framed.style.height;anchor.appendChild(img);}
 framed.parentNode.insertBefore(anchor,framed.nextSibling);}
 IWSetDivOpacity(framed,opacity);wrapper.show();if(shadow)

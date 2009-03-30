@@ -126,7 +126,7 @@ else
 var cropped=croppedSize(natural,kind,width);var scaleFactor=cropped.width/natural.width;if(natural.aspectRatio()>cropped.aspectRatio())
 {scaleFactor=cropped.height/natural.height;}
 var scaled=natural.scale(scaleFactor);var offset=new IWPoint(Math.abs(scaled.width-cropped.width)/2,Math.abs(scaled.height-cropped.height)/2);img.setStyle({width:px(scaled.width),height:px(scaled.height),marginLeft:px(-offset.x),marginTop:px(-offset.y),position:'relative'});cropDiv.setStyle({width:px(cropped.width),height:px(cropped.height),overflow:"hidden",position:'relative'});cropDiv.className="crop";}
-if(windowsInternetExplorer&&browserVersion<7&&img.src.indexOf(transparentGifURL())!=-1)
+if(windowsInternetExplorer&&effectiveBrowserVersion<7&&img.src.indexOf(transparentGifURL())!=-1)
 {var originalImage=new Image();originalImage.src=img.originalSrc;if(originalImage.complete)
 {croppingDivForImage_helper(originalImage);}
 else
