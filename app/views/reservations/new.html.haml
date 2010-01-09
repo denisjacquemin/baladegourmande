@@ -3,5 +3,5 @@
     = f.error_messages
     = render :partial => 'form', :locals => {:f => f}
     = f.submit "Je m'inscris"
-- else
+- elsif @bg
   =@bg.reservations_not_open_text

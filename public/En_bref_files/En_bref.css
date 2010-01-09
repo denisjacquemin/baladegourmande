@@ -1,3 +1,98 @@
+.style {
+    padding: 20px;
+}
+.paragraph_style {
+    color: rgb(116, 94, 120);
+    font-family: 'CourierNewPS-BoldMT', 'Courier New', monospace;
+    font-size: 18px;
+    font-stretch: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 22px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    opacity: 1.00;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    text-align: left;
+    text-decoration: none;
+    text-indent: 0px;
+    text-transform: none;
+}
+.style_1 {
+    color: rgb(128, 107, 150);
+    font-family: 'CourierNewPS-BoldMT', 'Courier New', monospace;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 19px;
+    opacity: 1.00;
+}
+.paragraph_style_1 {
+    color: rgb(67, 22, 98);
+    font-family: 'CourierNewPS-BoldMT', 'Courier New', monospace;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 19px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    opacity: 1.00;
+    padding-bottom: 7px;
+    padding-top: 0px;
+    text-align: left;
+    text-decoration: none;
+    text-indent: 0px;
+    text-transform: none;
+}
+.style_External_275_808 {
+    position: relative;
+}
+.style_2 {
+    color: rgb(128, 107, 150);
+    line-height: 19px;
+    opacity: 1.00;
+}
+.style_3 {
+    font-family: 'CourierNewPS-BoldMT', 'Courier New', monospace;
+    font-size: 13px;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 17px;
+}
+.style_4 {
+    font-family: 'CourierNewPSMT', 'Courier New', monospace;
+    font-size: 12px;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px;
+}
+.style_SkipStroke_2 {
+    background: transparent url(receipt_tile.jpg) repeat scroll top left;
+    opacity: 1.00;
+}
+.style_SkipStrokeSkipFillSkipOpacity {
+}
+.style_SkipStroke {
+    background: transparent;
+    opacity: 1.00;
+}
+.style_SkipStroke_1 {
+    background: transparent;
+    opacity: 1.00;
+}
 .Body_Small {
     color: rgb(115, 94, 121);
     font-family: 'CourierNewPS-BoldMT', 'Courier New', monospace;
@@ -21,7 +116,7 @@
     text-transform: none;
 }
 .Heading_2 {
-    color: rgb(115, 94, 121);
+    color: rgb(116, 94, 120);
     font-family: 'CourierNewPS-BoldMT', 'Courier New', monospace;
     font-size: 18px;
     font-stretch: normal;
@@ -48,106 +143,11 @@
     background: transparent;
     opacity: 1.00;
 }
-.graphic_textbox_layout_style_default_External_275_750 {
-    position: relative;
-}
-.style_External_275_750 {
-    position: relative;
-}
-.paragraph_style {
-    color: rgb(115, 94, 121);
-    font-family: 'CourierNewPS-BoldMT', 'Courier New', monospace;
-    font-size: 18px;
-    font-stretch: normal;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 700;
-    letter-spacing: 0;
-    line-height: 22px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 0px;
-    opacity: 1.00;
-    padding-bottom: 0px;
-    padding-top: 0px;
-    text-align: left;
-    text-decoration: none;
-    text-indent: 0px;
-    text-transform: none;
-}
-.style {
-    padding: 20px;
-}
-.style_SkipStrokeSkipFillSkipOpacity {
-}
-.style_1 {
-    color: rgb(128, 107, 150);
-    font-family: 'CourierNewPS-BoldMT', 'Courier New', monospace;
-    font-size: 14px;
-    font-stretch: normal;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 19px;
-    opacity: 1.00;
-}
 .graphic_textbox_layout_style_default {
     padding: 4px;
 }
-.paragraph_style_1 {
-    color: rgb(67, 21, 98);
-    font-family: 'CourierNewPS-BoldMT', 'Courier New', monospace;
-    font-size: 14px;
-    font-stretch: normal;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 700;
-    letter-spacing: 0;
-    line-height: 19px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 0px;
-    opacity: 1.00;
-    padding-bottom: 7px;
-    padding-top: 0px;
-    text-align: left;
-    text-decoration: none;
-    text-indent: 0px;
-    text-transform: none;
-}
-.style_2 {
-    color: rgb(128, 107, 150);
-    line-height: 19px;
-    opacity: 1.00;
-}
-.style_SkipStroke_1 {
-    background: transparent;
-    opacity: 1.00;
-}
-.style_SkipStroke {
-    background: transparent;
-    opacity: 1.00;
-}
-.style_3 {
-    font-family: 'CourierNewPS-BoldMT', 'Courier New', monospace;
-    font-size: 13px;
-    font-stretch: normal;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 17px;
-}
-.style_4 {
-    font-family: 'CourierNewPSMT', 'Courier New', monospace;
-    font-size: 12px;
-    font-stretch: normal;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 15px;
-}
-.style_SkipStroke_2 {
-    background: transparent url(receipt_tile.jpg) repeat scroll top left;
-    opacity: 1.00;
+.graphic_textbox_layout_style_default_External_275_808 {
+    position: relative;
 }
 .graphic_textbox_style_default_SkipStroke {
     background: transparent;
@@ -165,19 +165,7 @@ a:hover {
     color: rgb(185, 106, 60);
     text-decoration: none;
 }
-#widget0 a:visited {
-    color: rgb(121, 121, 121);
-    text-decoration: none;
-}
 .bumper {
-    font-size: 1px;
-    line-height: 1px;
-}
-#widget0 a:hover {
-    color: rgb(185, 106, 60);
-    text-decoration: none;
-}
-.spacer {
     font-size: 1px;
     line-height: 1px;
 }
@@ -185,9 +173,21 @@ a:hover {
     font-size: 1px;
     line-height: 1px;
 }
+#widget0 a:hover {
+    color: rgb(185, 106, 60);
+    text-decoration: none;
+}
+#widget0 a:visited {
+    color: rgb(121, 121, 121);
+    text-decoration: none;
+}
 #widget0 a {
     color: rgb(32, 15, 10);
     text-decoration: none;
+}
+.spacer {
+    font-size: 1px;
+    line-height: 1px;
 }
 body { 
     -webkit-text-size-adjust: none;
