@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
  <id>urn:iweb:D945C03E-8C67-41B8-9608-99D1AF092E17</id>
  <title>Page list Atom feed</title>
- <updated>2011-01-18T18:44:26+01:00</updated>
+ <updated>2011-02-06T19:11:26+01:00</updated>
  <link rel="self" href="feed.xml"/>
  <generator>iWeb</generator>
  <author>
@@ -14,7 +14,7 @@
   <title xmlns="urn:iweb:">En bref</title>
   <in-navbar xmlns="urn:iweb:">14739B8C-F666-4A6F-A1DE-9C3C847BA012</in-navbar>
   <link rel="alternate" href="En_bref.html"/>
-  <updated>2011-01-18T18:44:26.001+01:00</updated>
+  <updated>2011-02-06T19:11:26.001+01:00</updated>
   <content>En bref</content>
  </entry>
  <entry>
@@ -23,7 +23,7 @@
   <title xmlns="urn:iweb:">En détails</title>
   <in-navbar xmlns="urn:iweb:">DAE03E43-C507-4923-8670-A1355656E9D9</in-navbar>
   <link rel="alternate" href="En_details.html"/>
-  <updated>2011-01-18T18:44:26.002+01:00</updated>
+  <updated>2011-02-06T19:11:26.002+01:00</updated>
   <content>En détails</content>
  </entry>
  <entry>
@@ -32,7 +32,7 @@
   <title xmlns="urn:iweb:">Menu</title>
   <in-navbar xmlns="urn:iweb:">EB355F25-FDEF-4B24-B667-32E2FB3CD274</in-navbar>
   <link rel="alternate" href="Menu.html"/>
-  <updated>2011-01-18T18:44:26.003+01:00</updated>
+  <updated>2011-02-06T19:11:26.003+01:00</updated>
   <content>Menu</content>
  </entry>
  <entry>
@@ -41,7 +41,7 @@
   <title xmlns="urn:iweb:">Inscriptions</title>
   <in-navbar xmlns="urn:iweb:">0DB0F700-515D-44F3-9767-DC093C3C5D13</in-navbar>
   <link rel="alternate" href="Inscriptions.html"/>
-  <updated>2011-01-18T18:44:26.004+01:00</updated>
+  <updated>2011-02-06T19:11:26.004+01:00</updated>
   <content>Inscriptions</content>
  </entry>
  <entry>
@@ -50,7 +50,7 @@
   <title xmlns="urn:iweb:">Accès</title>
   <in-navbar xmlns="urn:iweb:">D07D2AF5-F1EC-44E3-8E89-7DFB443A0856</in-navbar>
   <link rel="alternate" href="Acces.html"/>
-  <updated>2011-01-18T18:44:26.005+01:00</updated>
+  <updated>2011-02-06T19:11:26.005+01:00</updated>
   <content>Accès</content>
  </entry>
 </feed>
