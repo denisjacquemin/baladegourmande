@@ -1,11 +1,9 @@
-// Created by iWeb 3.0.2 local-build-20110206
+// Created by iWeb 3.0.3 local-build-20110322
 
-setTransparentGifURL('Media/transparent.gif');function applyEffects()
-{var registry=IWCreateEffectRegistry();registry.registerEffects({shadow_0:new IWShadow({blurRadius:1,offset:new IWPoint(6.3640,6.3640),color:'#000000',opacity:0.440000})});registry.applyEffects();}
-function hostedOnDM()
+setTransparentGifURL('Media/transparent.gif');function hostedOnDM()
 {return false;}
 function onPageLoad()
 {loadMozillaCSS('Inscriptions_files/InscriptionsMoz.css')
-detectBrowser();fixAllIEPNGs('Media/transparent.gif');Widget.onload();fixupAllIEPNGBGs();applyEffects()}
+detectBrowser();fixAllIEPNGs('Media/transparent.gif');Widget.onload();fixupAllIEPNGBGs();performPostEffectsFixups()}
 function onPageUnload()
 {Widget.onunload();}
