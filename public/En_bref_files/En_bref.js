@@ -6,6 +6,6 @@ function hostedOnDM()
 {return false;}
 function onPageLoad()
 {loadMozillaCSS('En_bref_files/En_brefMoz.css')
-adjustLineHeightIfTooBig('id1');adjustFontSizeIfTooBig('id1');fixAllIEPNGs('Media/transparent.gif');Widget.onload();fixupAllIEPNGBGs();applyEffects()}
+adjustLineHeightIfTooBig('id1');adjustFontSizeIfTooBig('id1');fixAllIEPNGs('Media/transparent.gif');Widget.onload();fixupAllIEPNGBGs();fixupIECSS3Opacity('id2');applyEffects()}
 function onPageUnload()
 {Widget.onunload();}
