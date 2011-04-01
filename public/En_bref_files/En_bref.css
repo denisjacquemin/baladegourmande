@@ -68,8 +68,12 @@
     font-weight: 700;
     line-height: 17px;
 }
-.style_SkipStroke_2 {
+.style_SkipStroke_1 {
     background: transparent url(receipt_tile.jpg) repeat scroll top left;
+    opacity: 1.00;
+}
+.style_SkipStroke_2 {
+    background: transparent;
     opacity: 1.00;
 }
 .style_External_275_828 {
@@ -78,10 +82,6 @@
 .style_SkipStrokeSkipFillSkipOpacity {
 }
 .style_SkipStroke {
-    background: transparent;
-    opacity: 1.00;
-}
-.style_SkipStroke_1 {
     background: transparent;
     opacity: 1.00;
 }
