@@ -12,7 +12,6 @@ xml.Workbook({
 
       # Header
       xml.Row do
-          xml.Cell { xml.Data 'Groupe', 'ss:Type' => 'String' }
           xml.Cell { xml.Data 'Nom', 'ss:Type' => 'String' }
           xml.Cell { xml.Data 'Prenom', 'ss:Type' => 'String' }
           xml.Cell { xml.Data 'Rue', 'ss:Type' => 'String' }
@@ -30,7 +29,6 @@ xml.Workbook({
       # Rows
       for r in @reservations
         xml.Row do
-            xml.Cell { xml.Data r.group_name, 'ss:Type' => 'String' }
             xml.Cell { xml.Data r.lastname, 'ss:Type' => 'String' }
             xml.Cell { xml.Data r.firstname, 'ss:Type' => 'String' }
             xml.Cell { xml.Data r.street, 'ss:Type' => 'String' }
